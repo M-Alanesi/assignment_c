@@ -44,3 +44,15 @@ void add(int x,int y,int arr[x][y],int arr2[x][y]){
 
 }
 
+void subtract(int x,int y,int arr[x][y],int arr2[x][y]) {
+      int arr3[x][y];
+   for (int c = 0;  c < x; ++c) {
+    for (int i = 0; i <y; ++i){
+
+  arr3[c][i]  =arr[c][i] - arr2 [c][i];
+    } }
+
+    display_matrix(x,y,arr3);
+
+}
+
