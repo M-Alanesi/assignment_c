@@ -72,3 +72,62 @@ void sum_average(int x,int y,int arr[x][y],int arr2[x][y])
 
 
 }
+
+void factorial(int x,int y,int arr[x][y],int arr2[x][y])
+{
+  int fact=1;
+  //  for(i=1;i<=number;i++){
+  //     fact=fact*i;
+  // }
+      for (int c = 0;  c < x; ++c) {
+    for (int i = 0; i <y; ++i){
+
+      for(int d=1; d<=arr[c][i]; d++) {
+        fact=fact*d;
+
+      }
+      printf("\nfactorial of %d : %d \n",arr[c][i],fact);fact=1; } }
+      for (int c = 0;  c < x; ++c) {
+    for (int i = 0; i <y; ++i){
+
+      for(int d=1; d<=arr2[c][i]; d++) {
+        fact=fact*d;
+
+      }
+      printf("\nfactorial of %d : %d \n",arr2[c][i],fact);fact=1; } }
+
+
+}
+//this functions displayes largest & smallest elements in an array
+void largest_smallest (int x,int y,int arr[x][y],int arr2[x][y])
+ {int largest=0 , smallest=0;
+          for (int c = 0;  c < x; ++c) {
+    for (int i = 0; i <y; ++i){
+
+      if(largest<arr[c][i]) {
+largest=arr[c][i];
+      }
+      if(largest<arr2[c][i]){
+        largest=arr2[c][i];
+      }
+
+    }}
+    printf("\n The Largest varaible : %d \n",largest);
+smallest=largest; // make the comparing start from the largest number we have in our matrix
+
+ for (int c = 0;  c < x; ++c) {
+    for (int i = 0; i <y; ++i){
+
+      if(smallest >arr[c][i]) {
+        smallest =arr[c][i];
+
+      }
+      if(smallest > arr2[c][i]){
+        smallest=arr2[c][i];
+      }
+
+    }}
+    printf("\n The Smallest varaible : %d \n",smallest);
+
+
+ }
