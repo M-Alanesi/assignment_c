@@ -44,7 +44,7 @@ for (int c = 0;  c < x; ++c) {
                 }
             }
 
-            printf("\n First Matrix  \n")
+            printf("\n First Matrix  \n");
 
     display_matrix(x,y,arr);
 int d;
@@ -58,7 +58,7 @@ int d;
 
 
     } }
-    printf("\n Second Matrix  \n")
+    printf("\n Second Matrix  \n");
     display_matrix(x,y,arr2);
         //display_matrix(x,y,arr2);
 
