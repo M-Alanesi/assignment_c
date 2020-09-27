@@ -2,6 +2,7 @@ void display () {
 
  printf("Welcome to My application \n please enter a choice: \n 1.add two matrices \n2.subtract two matrics\n 3.Sum & Average \n 4.factorial\n 5.Largest & Smallest \n 6.Delete data\n 7.exit\n");
 }
+//this functions displayes any given array
 void display_matrix(int x,int y,int arr[x][y]) {
 
 for (int c = 0; c < x; ++c) {
@@ -17,6 +18,7 @@ for (int c = 0; c < x; ++c) {
 
 }
 
+//this functions add any two dimentional arrays
 void add(int x,int y,int arr[x][y],int arr2[x][y]){
     // for (int c = 0;  c < x; ++c) {
     // for (int i = 0; i <y; ++i){
@@ -43,7 +45,7 @@ void add(int x,int y,int arr[x][y],int arr2[x][y]){
 
 
 }
-
+//this functions subtracts any two dimentional arrays
 void subtract(int x,int y,int arr[x][y],int arr2[x][y]) {
       int arr3[x][y];
    for (int c = 0;  c < x; ++c) {
@@ -55,6 +57,7 @@ void subtract(int x,int y,int arr[x][y],int arr2[x][y]) {
     display_matrix(x,y,arr3);
 
 }
+// this functions displayes the sum & average of an array
 void sum_average(int x,int y,int arr[x][y],int arr2[x][y])
 {
     int average;
@@ -72,7 +75,7 @@ void sum_average(int x,int y,int arr[x][y],int arr2[x][y])
 
 
 }
-
+//functions that shows the factorial of all array elements
 void factorial(int x,int y,int arr[x][y],int arr2[x][y])
 {
   int fact=1;
@@ -130,7 +133,9 @@ smallest=largest; // make the comparing start from the largest number we have in
     printf("\n The Smallest varaible : %d \n",smallest);
 
 
- }void delete_arr(int x,int y,int arr[x][y],int arr2[x][y]) {
+ }
+//this functions nullify all array integer to 0
+void delete_arr(int x,int y,int arr[x][y],int arr2[x][y]) {
    for (int c = 0;  c < x; ++c) {
     for (int i = 0; i <y; ++i){
       arr[c][i]=0; arr2[c][i]=0;
@@ -153,3 +158,5 @@ printf("\n result for adding\n ");
 
 
 }
+
+
