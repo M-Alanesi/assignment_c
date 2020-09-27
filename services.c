@@ -130,4 +130,26 @@ smallest=largest; // make the comparing start from the largest number we have in
     printf("\n The Smallest varaible : %d \n",smallest);
 
 
- }
+ }void delete_arr(int x,int y,int arr[x][y],int arr2[x][y]) {
+   for (int c = 0;  c < x; ++c) {
+    for (int i = 0; i <y; ++i){
+      arr[c][i]=0; arr2[c][i]=0;
+    }}
+}
+
+void display_everything(int x,int y,int arr[x][y],int arr2[x][y]) {
+printf("\n result for adding\n ");
+    add(x,y,arr,arr2);
+    printf("\n result for subtracting\n");
+    subtract(x,y,arr,arr2);
+    printf("\n Sum & Average \n");
+    sum_average(x,y,arr,arr2);
+    printf("\n factorial \n");
+    factorial(x,y,arr,arr2);
+    printf("\n Largest & Smallest \n");
+    largest_smallest(x,y,arr,arr2);
+
+
+
+
+}
